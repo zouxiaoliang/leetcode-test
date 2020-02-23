@@ -7,7 +7,7 @@ __author__ = "zouxiaoliang"
 
 class Solution:
     @staticmethod
-    def two_sum(nums: List[int], target: int) -> List[int]:
+    def twoSum(nums: List[int], target: int) -> List[int]:
         for x in range(len(nums)):
             p2 = target - nums[x]
             if p2 in nums:
@@ -33,7 +33,7 @@ def _main():
     solution = Solution()
     nums = [2, 7, 11, 15]
     target = 9
-    print(solution.two_sum(nums, target))
+    print(solution.twoSum(nums, target))
 
 
 if __name__ == "__main__":

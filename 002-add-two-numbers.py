@@ -41,7 +41,7 @@ class Solution:
     如果存储的数据是按照逆序来存储的话，可以使用递归来解决
     """
     @classmethod
-    def add_two_numbers(cls, l1: ListNode, l2: ListNode) -> ListNode:
+    def addTwoNumbers(cls, l1: ListNode, l2: ListNode) -> ListNode:
         c_list = CStyleList()
         adding = 0
 
@@ -81,7 +81,7 @@ def _main():
     """
     solution = Solution()
     # solution.add_two_numbers(build_list([2, 4, 3]), build_list([5, 6, 4]))
-    solution.add_two_numbers(
+    solution.addTwoNumbers(
         CStyleList.to_c_style([1, 8]).front(),
         CStyleList.to_c_style([0]).front())
     pass
